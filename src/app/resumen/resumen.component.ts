@@ -1,3 +1,4 @@
+import { CvjorgeorejuelaService } from './../services/cvjorgeorejuela.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumenComponent implements OnInit {
 
-  constructor() { }
+  constructor(public cv: CvjorgeorejuelaService) { // Variable local para consumir los servicios de firebase
+
+  }
 
   ngOnInit(): void {
   }
